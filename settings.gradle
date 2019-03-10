@@ -1,1 +1,1 @@
-include ':app',':module_service', ':goods'
+include ':app', ':service', ':goods'

@@ -20,17 +20,14 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    publishNonDefault true
     productFlavors {
         pad {
             applicationId "com.retail.pad"
             versionName "retail_pad"
-
         }
         phone {
             applicationId "com.retail.phone"
             versionName "retail_phone"
-
         }
     }
 }
@@ -45,7 +42,7 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
-    implementation project(':module_service')
+    implementation project(':service')
     implementation project(':goods')
 
 }

@@ -11,26 +11,14 @@ android {
         flavorDimensions "versionCode"
     }
 
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-        }
-    }
-
     publishNonDefault true
     productFlavors {
-        common {
-            versionName "retail_common"
-
-        }
-
         pad {
-            versionName "retail_pad"
+            versionName "versionCode"
 
         }
         phone {
-            versionName "retail_phone"
+            versionName "versionCode"
 
         }
     }

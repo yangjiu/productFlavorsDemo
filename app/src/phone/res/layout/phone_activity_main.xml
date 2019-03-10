@@ -6,7 +6,9 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
-    <TextView
+
+    <Button
+            android:id="@+id/button"
             android:layout_width="match_parent"
             android:text="phone"
             android:layout_height="wrap_content"/>

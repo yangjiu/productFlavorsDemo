@@ -20,6 +20,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    publishNonDefault true
     productFlavors {
         pad {
             applicationId "com.retail.pad"
@@ -46,17 +47,4 @@ dependencies {
 
     implementation project(':module_service')
 
-//    implementation project(path: ":module_service", module_service: 'pad')
-//    implementation project(path: ":module_service", module_service: 'phone')
-
-//    padCompile project(path: ':module_service', configuration: 'padRelease')
-//    phoneCompile project(path: ':module_service', configuration: 'phoneRelease')
-}
-//configurations {
-//    demo1Compile
-//    demo2Compile
-//}
-configurations {
-    padCompile
-    phoneCompile
 }

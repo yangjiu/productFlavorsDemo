@@ -8,10 +8,38 @@ android {
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
-        flavorDimensions "versionCode"
-    }
 
-    publishNonDefault true
+    }
+    //官网地址：https://developer.android.com/studio/build/build-variants?hl=zh-cn
+    //代码块更改 Gradle 希望为源集的每个组件收集文件的位置
+    sourceSets {
+        main {
+            manifest.srcFile 'src/common/AndroidManifest.xml'
+            java.srcDirs = ['src/common/java', '.apt_generated']
+            aidl.srcDirs = ['src/common/aidl', '.apt_generated']
+            assets.srcDirs = ['src/common/assets']
+            jniLibs.srcDirs = ['src/common/jniLibs']
+        }
+
+        pad {
+            manifest.srcFile 'src/pad/AndroidManifest.xml'
+            java.srcDirs = ['src/pad/java', '.apt_generated']
+            aidl.srcDirs = ['src/pad/aidl', '.apt_generated']
+            assets.srcDirs = ['src/pad/assets']
+            jniLibs.srcDirs = ['src/pad/jniLibs']
+        }
+
+        phone {
+            manifest.srcFile 'src/phone/AndroidManifest.xml'
+            java.srcDirs = ['src/phone/java', '.apt_generated']
+            aidl.srcDirs = ['src/phone/aidl', '.apt_generated']
+            assets.srcDirs = ['src/phone/assets']
+            jniLibs.srcDirs = ['src/phone/jniLibs']
+        }
+    }
+    // 属性创建一个“模式”风格维度以组织“完整”和“演示”产品风格，以及一个“api”风格维度以基于 API 级别组织产品风格配置：
+    flavorDimensions "versionCode"
+    //配置产品风格
     productFlavors {
         pad {
         }

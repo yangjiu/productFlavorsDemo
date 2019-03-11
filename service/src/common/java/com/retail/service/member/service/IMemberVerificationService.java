@@ -3,9 +3,9 @@ package com.retail.service.member.service;
 import com.retail.service.member.model.IMemberInfo;
 
 /**
- * 会员储值服务
+ * 会员验证服务
  */
-public interface IPrepayService {
+public interface IMemberVerificationService {
     /**
      * 开启轮询
      */

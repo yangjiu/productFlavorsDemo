@@ -3,14 +3,7 @@ package com.retail.service.member.service;
 /**
  * 会员pad服务
  */
-public interface IMemberPadService {
-    /**
-     * 获取IMemberService
-     *
-     * @return {@link IMemberService}
-     */
-    IMemberService getMemberService();
-
+public interface IMemberPadService extends IMemberWrapperService {
     /**
      * 获取储值二维码
      *

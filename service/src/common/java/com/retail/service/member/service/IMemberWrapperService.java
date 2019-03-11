@@ -1,17 +1,17 @@
 package com.retail.service.member.service;
 
 /**
- * 会员基础公用服务
+ * 会员服务包装
  */
-public interface IMemberManagerService {
+public interface IMemberWrapperService {
 
     /**
      * 获取储值服务
      *
      * @param callback 回调
-     * @return {@link IPrepayService}
+     * @return {@link IMemberVerificationService}
      */
-    IPrepayService getPrepayService(IPrepayService.IPrepayServiceCallback callback);
+    IMemberVerificationService getPrepayService(IMemberVerificationService.IPrepayServiceCallback callback);
 
     /**
      * 获取IMemberService

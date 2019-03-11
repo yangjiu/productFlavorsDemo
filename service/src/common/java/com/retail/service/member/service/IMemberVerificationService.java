@@ -5,26 +5,13 @@ import com.retail.service.member.model.IMemberInfo;
 /**
  * 会员验证服务
  */
+@SuppressWarnings("unused")
 public interface IMemberVerificationService {
-    /**
-     * 开启轮询
-     */
-    void startPoll();
 
     /**
-     * 暂停轮询
+     * 信息回调
      */
-    void pausePoll();
-
-    /**
-     * 关闭轮询
-     */
-    void closePoll();
-
-    /**
-     * 储值服务信息回调
-     */
-    interface IPrepayServiceCallback {
+    interface ICallback {
         /**
          * 储值回调
          *
@@ -32,5 +19,20 @@ public interface IMemberVerificationService {
          * @param info  会员信息
          */
         void prepaySCallback(boolean isPay, IMemberInfo info);
+    }
+
+    /**
+     * 控制器
+     */
+    interface IControl {
+        /**
+         * 开启轮询
+         */
+        void restart();
+
+        /**
+         * 暂停轮询
+         */
+        void pause();
     }
 }

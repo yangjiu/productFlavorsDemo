@@ -11,7 +11,7 @@ public interface IMemberWrapperService {
      * @param callback 回调
      * @return {@link IMemberVerificationService}
      */
-    IMemberVerificationService getPrepayService(IMemberVerificationService.IPrepayServiceCallback callback);
+    IMemberVerificationService.IControl getPrepayService(IMemberVerificationService.ICallback callback);
 
     /**
      * 获取IMemberService

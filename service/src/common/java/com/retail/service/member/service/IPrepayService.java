@@ -1,4 +1,6 @@
-package com.retail.service.member.model;
+package com.retail.service.member.service;
+
+import com.retail.service.member.model.IMemberInfo;
 
 /**
  * 会员储值服务

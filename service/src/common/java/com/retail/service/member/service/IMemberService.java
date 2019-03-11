@@ -1,15 +1,25 @@
 package com.retail.service.member.service;
 
-import android.support.v4.app.Fragment;
+import com.retail.service.member.model.IMemberInfo;
 
 /**
- * 会员通用抽象服务
+ * 会员基础公用服务
  */
-public interface IMemberService extends IMemberBaseService {
+public interface IMemberService {
+
     /**
-     * 获取会员登录view
+     * 根据手机号获取会员信息
      *
-     * @return {@link Fragment}
+     * @param phone 手机号
+     * @return {@link IMemberInfo}
      */
-    Fragment getMemberLoginView();
+    IMemberInfo getMemberInfo(String phone);
+
+    /**
+     * 获取储值服务
+     *
+     * @param callback 回调
+     * @return {@link IPrepayService}
+     */
+    IPrepayService getPrepayService(IPrepayService.IPrepayServiceCallback callback);
 }

@@ -22,5 +22,5 @@ public interface IMemberBaseService {
      * @param callback 回调
      * @return {@link IPrepayService}
      */
-    IPrepayService getPrepayServicd(IPrepayService.IPrepayServiceCallback callback);
+    IPrepayService getPrepayService(IPrepayService.IPrepayServiceCallback callback);
 }

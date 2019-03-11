@@ -6,7 +6,7 @@ import com.retail.service.member.model.IMemberInfo;
 /**
  * 会员通用抽象服务
  */
-public interface IMemberService {
+public interface IMemberService extends IMemberBaseService {
     /**
      * 获取会员登录view
      *

@@ -44,5 +44,6 @@ dependencies {
 
     implementation project(':service')
     implementation project(':goods')
+    implementation project(':member')
 
 }

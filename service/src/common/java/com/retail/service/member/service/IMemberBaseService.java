@@ -6,7 +6,7 @@ import com.retail.service.member.model.IPrepayService;
 /**
  * 会员基础公用服务
  */
-public interface IMemberBaseService extends IMemberPadService {
+public interface IMemberBaseService {
 
     /**
      * 根据手机号获取会员信息

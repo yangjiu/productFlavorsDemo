@@ -15,11 +15,4 @@ public interface IMemberService {
      */
     IMemberInfo getMemberInfo(String phone);
 
-    /**
-     * 获取储值服务
-     *
-     * @param callback 回调
-     * @return {@link IPrepayService}
-     */
-    IPrepayService getPrepayService(IPrepayService.IPrepayServiceCallback callback);
 }

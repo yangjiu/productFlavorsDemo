@@ -1,13 +1,14 @@
 package com.retail.member.service;
 
 import com.retail.service.member.model.IMemberInfo;
+import com.retail.service.member.service.IMemberManagerService;
 import com.retail.service.member.service.IMemberService;
 import com.retail.service.member.service.IPrepayService;
 
 /**
  * 会员公共服务的实现
  */
-public  class MemberServiceImpl implements IMemberService {
+public  class MemberServiceImpl implements IMemberService ,IMemberManagerService {
 
     @Override
     public IMemberInfo getMemberInfo(String phone) {
@@ -17,5 +18,10 @@ public  class MemberServiceImpl implements IMemberService {
     @Override
     public IPrepayService getPrepayService(IPrepayService.IPrepayServiceCallback callback) {
         return null;
+    }
+
+    @Override
+    public IMemberService getMemberService() {
+        return this;
     }
 }

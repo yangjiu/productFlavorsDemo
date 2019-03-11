@@ -5,6 +5,6 @@ import com.retail.goos.MainGoodsUtils;
 
 public class GoodsUtils {
     public static void toast(Context context) {
-        MainGoodsUtils.log("pad-goods");
+        MainGoodsUtils.log("phone-goods");
     }
 }

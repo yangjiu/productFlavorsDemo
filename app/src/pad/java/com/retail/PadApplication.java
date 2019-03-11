@@ -9,6 +9,7 @@ public class PadApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+
         ServiceManagerFactory.getInstance().put(IMemberPadService.class,MemberPadServiceImpl.class);
     }
 }

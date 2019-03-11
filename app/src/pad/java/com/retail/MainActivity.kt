@@ -13,16 +13,20 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.pad_activity_main)
+        val padService = ServiceManagerFactory.getInstance().get(IMemberPadService::class.java)
+
         button.setOnClickListener {
             GoodsUtils.toast(this)
         }
 
         button1.setOnClickListener {
-            val padService = ServiceManagerFactory.getInstance().get(IMemberPadService::class.java)
             val qRCode = padService.prepayQRCode
-            Toast.makeText(this, qRCode, Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, qRCode, Toast.LENGTH_LONG).show()
         }
 
-
+        button2.setOnClickListener {
+            val info = padService.memberService.getMemberInfo("123").toString()
+            Toast.makeText(this, info, Toast.LENGTH_LONG).show()
+        }
     }
 }

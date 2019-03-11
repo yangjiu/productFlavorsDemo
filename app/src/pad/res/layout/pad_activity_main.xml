@@ -17,5 +17,10 @@
             android:layout_width="match_parent"
             android:text="获取二维码"
             android:layout_height="wrap_content"/>
+    <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:text="获取会员信息"
+            android:layout_height="wrap_content"/>
 
 </LinearLayout>

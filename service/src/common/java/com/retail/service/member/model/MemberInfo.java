@@ -17,5 +17,5 @@ public class MemberInfo {
     /**
      * 余额
      */
-    public Long balance;
+    public long balance;
 }

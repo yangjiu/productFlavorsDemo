@@ -13,7 +13,7 @@ public class MemberServiceImpl implements IMemberDataService, IMemberViewService
 
     @Override
     public MemberInfo getMemberInfo(String phone) {
-        return new com.retail.member.model.MemberInfo(123, "张王李", 8888L);
+        return new com.retail.member.model.MemberInfo(123, "张王李", 8888);
     }
 
     @Override
@@ -23,7 +23,7 @@ public class MemberServiceImpl implements IMemberDataService, IMemberViewService
 
     @Override
     public IMemberViewService getIMemberViewService() {
-        return null;
+        return this;
     }
 
     @Override

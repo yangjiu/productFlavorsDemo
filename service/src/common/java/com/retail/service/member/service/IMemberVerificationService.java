@@ -17,7 +17,7 @@ public interface IMemberVerificationService {
          *
          * @param info 会员信息
          */
-        void prepaySCallback(boolean isSucceed, MemberInfo info);
+        void callback(boolean isSucceed, MemberInfo info);
     }
 
     /**

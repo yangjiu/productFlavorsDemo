@@ -18,4 +18,13 @@ public class MemberInfo {
      * 余额
      */
     public long balance;
+
+    @Override
+    public String toString() {
+        return "MemberInfo{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", balance=" + balance +
+                '}';
+    }
 }

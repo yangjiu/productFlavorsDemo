@@ -11,13 +11,13 @@ public class MemberVerificationServiceImpl implements IMemberVerificationService
     private static MemberVerificationServiceImpl memberVerificationService;
 
     private MemberVerificationServiceImpl() {
-        if (memberVerificationService == null) {
-            memberVerificationService = new MemberVerificationServiceImpl();
-            handler = new Handler();
-        }
+        handler = new Handler();
     }
 
     public synchronized static MemberVerificationServiceImpl getInstance() {
+        if (memberVerificationService == null) {
+            memberVerificationService = new MemberVerificationServiceImpl();
+        }
         return memberVerificationService;
 
     }
@@ -30,6 +30,7 @@ public class MemberVerificationServiceImpl implements IMemberVerificationService
     public MemberVerificationServiceImpl setCallback(final IMemberVerificationService.ICallback callback) {
         this.callback = callback;
         isLoop = true;
+        count = 0;
         loop();
         return this;
     }
@@ -39,8 +40,8 @@ public class MemberVerificationServiceImpl implements IMemberVerificationService
             @Override
             public void run() {
                 if (callback != null) {
-                    callback.prepaySCallback(false,new MemberInfoEx(count, "***", count));
                     if (isLoop) {
+                        callback.callback(false,new MemberInfoEx(count++, "***", count));
                         loop();
                     }
                 }

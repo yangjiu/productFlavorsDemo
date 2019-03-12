@@ -1,7 +1,10 @@
 package com.retail.member.service;
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.widget.Toast;
+import com.retail.member.ui.MemberLoginActivity;
 import com.retail.service.member.service.IMemberPhoneService;
 
 /**
@@ -10,7 +13,8 @@ import com.retail.service.member.service.IMemberPhoneService;
 public class MemberPhoneServiceImpl extends MemberServiceImpl implements IMemberPhoneService {
 
     @Override
-    public void startLogin(Context context) {
+    public void startLogin(Activity context) {
         Toast.makeText(context, "正在登录会员", Toast.LENGTH_SHORT).show();
+        context.startActivity(new Intent(context, MemberLoginActivity.class));
     }
 }

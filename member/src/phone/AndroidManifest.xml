@@ -2,4 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.retail.member">
 
+    <application
+            android:allowBackup="true">
+        <activity android:name=".ui.MemberLoginActivity"/>
+
+    </application>
 </manifest>

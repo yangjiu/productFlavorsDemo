@@ -3,7 +3,7 @@ package com.retail.service.member.service;
 import com.retail.service.member.model.IMemberInfo;
 
 /**
- * 会员基础公用服务
+ * 会员公用服务
  */
 public interface IMemberService {
 
@@ -14,5 +14,4 @@ public interface IMemberService {
      * @return {@link IMemberInfo}
      */
     IMemberInfo getMemberInfo(String phone);
-
 }

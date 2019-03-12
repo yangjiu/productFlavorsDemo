@@ -6,7 +6,7 @@ package com.retail.service.member.service;
 public interface IMemberWrapperService {
 
     /**
-     * 获取储值服务
+     * 会员验证服务
      *
      * @param callback 回调
      * @return {@link IMemberVerificationService}
@@ -14,7 +14,7 @@ public interface IMemberWrapperService {
     IMemberVerificationService.IControl getPrepayService(IMemberVerificationService.ICallback callback);
 
     /**
-     * 获取IMemberService
+     * 会员公用服务
      *
      * @return {@link IMemberService}
      */

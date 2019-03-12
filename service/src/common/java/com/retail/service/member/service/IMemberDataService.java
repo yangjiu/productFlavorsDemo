@@ -14,4 +14,13 @@ public interface IMemberDataService {
      * @return {@link MemberInfo}
      */
     MemberInfo getMemberInfo(String phone);
+
+
+    /**
+     * 会员验证
+     * @param callback 回调验证信息
+     * @return 控制器
+     */
+    IMemberVerificationService.IControl memberVerification(IMemberVerificationService.ICallback callback);
+
 }

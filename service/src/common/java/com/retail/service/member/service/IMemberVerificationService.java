@@ -15,10 +15,9 @@ public interface IMemberVerificationService {
         /**
          * 储值回调
          *
-         * @param isPay 是否支付，true:成功，false:失败
-         * @param info  会员信息
+         * @param info 会员信息
          */
-        void prepaySCallback(boolean isPay, MemberInfo info);
+        void prepaySCallback(boolean isSucceed, MemberInfo info);
     }
 
     /**
@@ -31,8 +30,8 @@ public interface IMemberVerificationService {
         void restart();
 
         /**
-         * 关闭轮询
+         * 暂停轮询
          */
-        void close();
+        void pause();
     }
 }

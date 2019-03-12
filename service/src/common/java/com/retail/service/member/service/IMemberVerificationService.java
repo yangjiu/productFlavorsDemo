@@ -1,6 +1,6 @@
 package com.retail.service.member.service;
 
-import com.retail.service.member.model.IMemberInfo;
+import com.retail.service.member.model.MemberInfo;
 
 /**
  * 会员验证服务
@@ -18,7 +18,7 @@ public interface IMemberVerificationService {
          * @param isPay 是否支付，true:成功，false:失败
          * @param info  会员信息
          */
-        void prepaySCallback(boolean isPay, IMemberInfo info);
+        void prepaySCallback(boolean isPay, MemberInfo info);
     }
 
     /**

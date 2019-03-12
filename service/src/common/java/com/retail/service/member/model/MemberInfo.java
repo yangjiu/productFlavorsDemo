@@ -3,19 +3,19 @@ package com.retail.service.member.model;
 /**
  * 会员信息
  */
-public interface IMemberInfo {
+public class MemberInfo {
     /**
      * 会员id
      */
-    long getId();
+    public long id;
 
     /**
      * 会员名称
      */
-    String getName();
+    public String name;
 
     /**
      * 余额
      */
-    Long getBalance();
+    public Long balance;
 }

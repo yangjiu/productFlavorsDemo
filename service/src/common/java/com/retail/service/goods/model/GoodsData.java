@@ -3,19 +3,19 @@ package com.retail.service.goods.model;
 /**
  * 商品实体对象
  */
-public interface IGoodsData {
+public class GoodsData {
     /**
      * 商品id
      */
-    long getId();
+    public long id;
 
     /**
      * 商品名称
      */
-    String getName();
+    public String name;
 
     /**
      * 商品价格
      */
-    Long getPrice();
+    public Long price;
 }

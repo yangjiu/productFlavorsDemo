@@ -1,6 +1,6 @@
 package com.retail.service.goods.service;
 
-import com.retail.service.goods.model.IGoodsData;
+import com.retail.service.goods.model.GoodsData;
 
 import java.util.List;
 
@@ -14,7 +14,7 @@ public interface IGoodsService {
      * @param goodsId 商品
      * @return 商品模型
      */
-    IGoodsData queryGoods(long goodsId);
+    GoodsData queryGoods(long goodsId);
 
     /**
      * 根据商品 id 查询商品
@@ -22,7 +22,7 @@ public interface IGoodsService {
      * @param goodsIds 商品id数组
      * @return 商品模型集合
      */
-    List<IGoodsData> queryGoods(long[] goodsIds);
+    List<GoodsData> queryGoods(long[] goodsIds);
 
 
 }

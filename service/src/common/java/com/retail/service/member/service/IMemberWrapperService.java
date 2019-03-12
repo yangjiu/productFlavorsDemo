@@ -6,17 +6,16 @@ package com.retail.service.member.service;
 public interface IMemberWrapperService {
 
     /**
-     * 会员验证服务
+     * 会员UI服务
      *
-     * @param callback 回调
-     * @return {@link IMemberVerificationService}
+     * @return {@link IMemberViewService}
      */
-    IMemberVerificationService.IControl getPrepayService(IMemberVerificationService.ICallback callback);
+    IMemberViewService getIMemberViewService();
 
     /**
-     * 会员公用服务
+     * 会员数据服务
      *
-     * @return {@link IMemberService}
+     * @return {@link IMemberDataService}
      */
-    IMemberService getMemberService();
+    IMemberDataService getMemberService();
 }

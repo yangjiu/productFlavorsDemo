@@ -21,12 +21,14 @@ class MainActivity : AppCompatActivity() {
 
         button1.setOnClickListener {
             val qRCode = padService.prepayQRCode
-            Toast.makeText(this, qRCode, Toast.LENGTH_LONG).show()
+            Toast.makeText(this, qRCode, Toast.LENGTH_SHORT).show()
         }
 
         button2.setOnClickListener {
-            val info = padService.memberService.getMemberInfo("123").toString()
-            Toast.makeText(this, info, Toast.LENGTH_LONG).show()
+
+            val info = padService.memberService.getMemberInfo("1760588")
+
+            Toast.makeText(this, info.name, Toast.LENGTH_SHORT).show()
         }
     }
 }

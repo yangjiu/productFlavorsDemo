@@ -31,8 +31,8 @@ public interface IMemberVerificationService {
         void restart();
 
         /**
-         * 暂停轮询
+         * 关闭轮询
          */
-        void pause();
+        void close();
     }
 }

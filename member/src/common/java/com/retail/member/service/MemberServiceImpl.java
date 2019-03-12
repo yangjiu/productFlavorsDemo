@@ -17,7 +17,7 @@ public class MemberServiceImpl implements IMemberService, IMemberWrapperService 
     }
 
     @Override
-    public IMemberVerificationService getPrepayService(IMemberVerificationService.IPrepayServiceCallback callback) {
+    public IMemberVerificationService.IControl getPrepayService(IMemberVerificationService.ICallback callback) {
         return null;
     }
 

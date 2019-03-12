@@ -5,19 +5,21 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-       >
+>
 
 
-    <Button
+    <TextView
             android:id="@+id/button"
             android:layout_width="match_parent"
-            android:text="phone"
+            android:text="phone_goods"
+            android:gravity="center"
+            android:padding="10dp"
             android:layout_height="wrap_content"/>
 
     <Button
             android:id="@+id/button1"
             android:layout_width="match_parent"
-            android:text="跳转到商品"
+            android:text="获取会员view"
             android:layout_height="wrap_content"/>
 
 </LinearLayout>

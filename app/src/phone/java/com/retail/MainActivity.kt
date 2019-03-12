@@ -1,11 +1,12 @@
 package com.retail
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.widget.Toast
 import com.retail.goods.GoodsUtils
-import com.retail.service.member.service.IMemberPhoneService
-import com.retail.service.util.ServiceManagerFactory
+import com.retail.goods.ui.GoodsActivity
+
+
 import kotlinx.android.synthetic.phone.phone_activity_main.*
 
 
@@ -18,8 +19,9 @@ class MainActivity : AppCompatActivity() {
         }
 
         button1.setOnClickListener {
-            val memberService = ServiceManagerFactory.getInstance().get(IMemberPhoneService::class.java)
-            memberService.startLogin(this)
+
+            startActivity(Intent(this, GoodsActivity::class.java))
+
         }
     }
 

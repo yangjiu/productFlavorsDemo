@@ -1,6 +1,5 @@
 package com.retail;
 
-import android.app.Application;
 import com.retail.member.service.MemberPadServiceImpl;
 import com.retail.service.member.service.IMemberPadService;
 import com.retail.service.util.ServiceManagerFactory;

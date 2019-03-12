@@ -22,4 +22,10 @@
             android:text="获取会员view"
             android:layout_height="wrap_content"/>
 
+    <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    </FrameLayout>
+
 </LinearLayout>

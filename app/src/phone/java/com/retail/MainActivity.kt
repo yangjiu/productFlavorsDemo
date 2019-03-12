@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.retail.goods.GoodsUtils
 import com.retail.goods.ui.GoodsActivity
+import com.retail.member.ui.MemberLoginActivity
 
 
 import kotlinx.android.synthetic.phone.phone_activity_main.*
@@ -21,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         button1.setOnClickListener {
 
             startActivity(Intent(this, GoodsActivity::class.java))
+//            startActivity(Intent(this, MemberLoginActivity::class.java))
 
         }
     }

@@ -10,5 +10,7 @@ public class MemberLoginActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.member_activity_login);
+
+        getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout, new MemberLoginFragment()).commit();
     }
 }

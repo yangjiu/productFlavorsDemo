@@ -1,10 +1,7 @@
 package com.retail.member.service;
 
-import android.app.Activity;
-import android.content.Context;
-import android.content.Intent;
-import android.widget.Toast;
-import com.retail.member.ui.MemberLoginActivity;
+import android.support.v4.app.Fragment;
+import com.retail.member.ui.MemberLoginFragment;
 import com.retail.service.member.service.IMemberPhoneService;
 
 /**
@@ -13,8 +10,7 @@ import com.retail.service.member.service.IMemberPhoneService;
 public class MemberPhoneServiceImpl extends MemberWrapServiceImpl implements IMemberPhoneService {
 
     @Override
-    public void startLogin(Activity context) {
-        Toast.makeText(context, "正在登录会员", Toast.LENGTH_SHORT).show();
-        context.startActivity(new Intent(context, MemberLoginActivity.class));
+    public Fragment getLoginView() {
+        return new MemberLoginFragment();
     }
 }

@@ -10,7 +10,7 @@ import com.retail.service.member.service.IMemberWrapperService;
 public class MemberWrapServiceImpl implements IMemberWrapperService {
 
     @Override
-    public IMemberViewService getIMemberViewService() {
+    public IMemberViewService getMemberViewService() {
         return new MemberViewImp();
     }
 

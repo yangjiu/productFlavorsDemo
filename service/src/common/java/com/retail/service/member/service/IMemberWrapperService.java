@@ -10,7 +10,7 @@ public interface IMemberWrapperService {
      *
      * @return {@link IMemberViewService}
      */
-    IMemberViewService getIMemberViewService();
+    IMemberViewService getMemberViewService();
 
     /**
      * 会员数据服务

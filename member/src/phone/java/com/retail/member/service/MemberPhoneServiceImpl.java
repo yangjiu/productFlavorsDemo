@@ -10,7 +10,7 @@ import com.retail.service.member.service.IMemberPhoneService;
 /**
  * 会员phone服务的实现
  */
-public class MemberPhoneServiceImpl extends MemberServiceImpl implements IMemberPhoneService {
+public class MemberPhoneServiceImpl extends MemberWrapServiceImpl implements IMemberPhoneService {
 
     @Override
     public void startLogin(Activity context) {

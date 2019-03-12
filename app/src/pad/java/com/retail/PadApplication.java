@@ -5,7 +5,7 @@ import com.retail.member.service.MemberPadServiceImpl;
 import com.retail.service.member.service.IMemberPadService;
 import com.retail.service.util.ServiceManagerFactory;
 
-public class PadApplication extends Application {
+public class PadApplication extends MainApplication {
     @Override
     public void onCreate() {
         super.onCreate();

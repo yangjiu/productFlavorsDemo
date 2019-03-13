@@ -1,8 +1,8 @@
 package com.retail;
 
 import com.retail.member.service.MemberPhoneServiceImpl;
-import com.retail.service.member.service.IMemberPhoneService;
 import common.util.ServiceManagerFactory;
+import member.service.IMemberPhoneService;
 
 public class PhoneApplication extends MainApplication {
     @Override

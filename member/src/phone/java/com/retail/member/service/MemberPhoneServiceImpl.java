@@ -2,7 +2,7 @@ package com.retail.member.service;
 
 import android.support.v4.app.Fragment;
 import com.retail.member.ui.MemberLoginFragment;
-import com.retail.service.member.service.IMemberPhoneService;
+import member.service.IMemberPhoneService;
 
 /**
  * 会员phone服务的实现

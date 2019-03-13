@@ -1,6 +1,6 @@
-package com.retail.service.member.service;
+package member.service;
 
-import com.retail.service.member.model.MemberInfo;
+import member.model.MemberInfo;
 
 /**
  * 会员验证服务

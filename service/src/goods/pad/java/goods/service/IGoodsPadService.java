@@ -1,4 +1,4 @@
-package com.retail.service.goods.service;
+package goods.service;
 
 import android.support.v4.app.Fragment;
 

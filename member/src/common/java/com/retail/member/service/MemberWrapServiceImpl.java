@@ -1,8 +1,9 @@
 package com.retail.member.service;
 
-import com.retail.service.member.service.IMemberDataService;
-import com.retail.service.member.service.IMemberViewService;
-import com.retail.service.member.service.IMemberWrapperService;
+
+import member.service.IMemberDataService;
+import member.service.IMemberViewService;
+import member.service.IMemberWrapperService;
 
 /**
  * 会员公共服务的实现

@@ -1,4 +1,4 @@
-package com.retail.service.goods.service;
+package goods.service;
 
 /**
  * 商品phone服务

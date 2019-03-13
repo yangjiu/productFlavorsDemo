@@ -1,4 +1,4 @@
-package com.retail.service.member.model;
+package member.model;
 
 /**
  * 会员信息

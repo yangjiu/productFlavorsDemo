@@ -1,4 +1,4 @@
-package com.retail.service.goods.model;
+package goods.model;
 
 /**
  * 商品实体对象

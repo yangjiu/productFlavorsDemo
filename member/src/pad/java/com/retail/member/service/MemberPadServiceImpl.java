@@ -1,6 +1,8 @@
 package com.retail.member.service;
 
-import com.retail.service.member.service.IMemberPadService;
+
+import member.service.IMemberPadService;
+import com.retail.member.service.MemberWrapServiceImpl;
 
 /**
  * 会员pad服务的实现

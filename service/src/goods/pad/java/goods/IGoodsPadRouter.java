@@ -1,4 +1,4 @@
-package com.retail.service.goods;
+package goods;
 
 public interface IGoodsPadRouter extends IGoodsRouter {
 

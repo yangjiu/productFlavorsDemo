@@ -1,4 +1,4 @@
-package com.retail.service.goods.service;
+package goods.service;
 
 import com.retail.service.goods.model.GoodsData;
 

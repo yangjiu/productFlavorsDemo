@@ -1,6 +1,8 @@
 package com.retail.member.model;
 
-public class MemberInfoEx extends com.retail.service.member.model.MemberInfo {
+import member.model.MemberInfo;
+
+public class MemberInfoEx extends MemberInfo {
 
 
     public MemberInfoEx(long id, String name, long balance) {

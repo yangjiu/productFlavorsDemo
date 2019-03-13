@@ -2,7 +2,8 @@ package com.retail.member.service;
 
 import android.os.Handler;
 import com.retail.member.model.MemberInfoEx;
-import com.retail.service.member.service.IMemberVerificationService;
+import member.service.IMemberVerificationService;
+
 
 /**
  * 会员公共服务的实现

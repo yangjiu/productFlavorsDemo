@@ -6,10 +6,10 @@ import android.util.Log
 import android.widget.Toast
 import com.retail.R
 import com.retail.goods.GoodsUtils
-import com.retail.service.member.service.IMemberPadService
-import com.retail.service.member.service.IMemberVerificationService
-import com.retail.service.util.ServiceManagerFactory
+import common.util.ServiceManagerFactory
 import kotlinx.android.synthetic.pad.pad_activity_main.*
+import member.service.IMemberPadService
+import member.service.IMemberVerificationService
 
 
 class MainActivity : AppCompatActivity() {
@@ -35,7 +35,8 @@ class MainActivity : AppCompatActivity() {
             Log.e("verification", "二维码：$info")
 
         }
-        var control: IMemberVerificationService.IControl? = null
+        var control: IMemberVerificationService
+        .IControl? = null
 
         verification.setOnClickListener {
             control = padService.memberService.memberVerification { isSucceed, info ->

@@ -1,4 +1,4 @@
-package com.retail.service.util;
+package common.util;
 
 import android.support.annotation.NonNull;
 

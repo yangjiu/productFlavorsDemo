@@ -1,4 +1,4 @@
-package com.retail.service.member.service;
+package member.service;
 
 import android.support.v4.app.Fragment;
 

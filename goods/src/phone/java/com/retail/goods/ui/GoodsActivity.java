@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import com.retail.goods.R;
 import com.retail.service.member.service.IMemberPhoneService;
-import com.retail.service.util.ServiceManagerFactory;
+import common.util.ServiceManagerFactory;
 
 
 public class GoodsActivity extends AppCompatActivity {

@@ -1,4 +1,4 @@
-package com.retail.service.member.service;
+package member.service;
 
 /**
  * 会员pad服务

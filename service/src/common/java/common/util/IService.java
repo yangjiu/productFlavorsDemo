@@ -1,4 +1,4 @@
-package com.retail.service.util;
+package common.util;
 
 /**
  * Service 接口

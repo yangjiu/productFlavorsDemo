@@ -1,4 +1,4 @@
-package com.retail.service.member;
+package member;
 /**
  * 会员pad的Router Action
  */

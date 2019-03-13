@@ -2,8 +2,8 @@ package com.retail;
 
 import android.app.Application;
 import com.retail.member.service.MemberWrapServiceImpl;
-import com.retail.service.member.service.IMemberWrapperService;
-import com.retail.service.util.ServiceManagerFactory;
+import common.util.ServiceManagerFactory;
+import member.service.IMemberWrapperService;
 
 public class MainApplication extends Application {
     @Override

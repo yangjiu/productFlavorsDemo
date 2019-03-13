@@ -1,9 +1,11 @@
 package com.retail.member.service;
 
+
 import com.retail.member.model.MemberInfoEx;
-import com.retail.service.member.model.MemberInfo;
-import com.retail.service.member.service.IMemberDataService;
-import com.retail.service.member.service.IMemberVerificationService;
+import member.model.MemberInfo;
+import member.service.IMemberDataService;
+import member.service.IMemberVerificationService;
+
 
 public class MemberDataImp implements IMemberDataService {
     @Override

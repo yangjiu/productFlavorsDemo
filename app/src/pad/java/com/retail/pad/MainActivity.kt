@@ -26,11 +26,13 @@ class MainActivity : AppCompatActivity() {
         button1.setOnClickListener {
             val qRCode = padService.prepayQRCode
             Toast.makeText(this, qRCode, Toast.LENGTH_SHORT).show()
+            Log.e("verification", "二维码：$qRCode")
         }
 
         button2.setOnClickListener {
-            val info = padService.memberService.getMemberInfo("1760588")
+            val info = padService.memberService.getMemberInfo("17605889789")
             Toast.makeText(this, info.name, Toast.LENGTH_SHORT).show()
+            Log.e("verification", "二维码：$info")
 
         }
         var control: IMemberVerificationService.IControl? = null
@@ -48,5 +50,6 @@ class MainActivity : AppCompatActivity() {
             control?.pause()
             Log.e("verification", "暂停")
         }
+
     }
 }

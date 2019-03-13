@@ -8,6 +8,6 @@ import com.retail.service.member.service.IMemberPadService;
 public class MemberPadServiceImpl extends MemberWrapServiceImpl implements IMemberPadService {
     @Override
     public String getPrepayQRCode() {
-        return "二维码123456789";
+        return "0123456789";
     }
 }

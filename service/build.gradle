@@ -1,1 +1,55 @@
-apply from: "../module.gradle"
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+    }
+    //官网地址：https://developer.android.com/studio/build/build-variants?hl=zh-cn
+    //代码块更改 Gradle 希望为源集的每个组件收集文件的位置
+    sourceSets {
+        main {
+            manifest.srcFile 'src/AndroidManifest.xml'
+            java.srcDirs = [
+                    'src/goods/common/java', '.apt_generated',
+                    'src/member/common/java', '.apt_generated',
+                    'src/common/java', '.apt_generated'
+            ]
+        }
+
+        pad {
+            manifest.srcFile 'src/AndroidManifest.xml'
+            java.srcDirs = [
+                    'src/goods/pad/java', '.apt_generated',
+                    'src/member/pad/java', '.apt_generated'
+            ]
+        }
+
+        phone {
+            manifest.srcFile 'src/AndroidManifest.xml'
+            java.srcDirs = [
+                    'src/member/phone/java', '.apt_generated',
+                    'src/goods/phone/java', '.apt_generated'
+            ]
+        }
+    }
+    // 属性创建一个“模式”风格维度以组织“完整”和“演示”产品风格，以及一个“api”风格维度以基于 API 级别组织产品风格配置：
+    flavorDimensions "versionCode"
+    //配置产品风格
+    productFlavors {
+        pad {
+        }
+        phone {
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+}

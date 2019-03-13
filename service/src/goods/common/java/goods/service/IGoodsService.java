@@ -1,6 +1,7 @@
 package goods.service;
 
-import com.retail.service.goods.model.GoodsData;
+
+import goods.model.GoodsData;
 
 import java.util.List;
 

@@ -6,8 +6,8 @@ import android.util.Log
 import android.widget.Toast
 import com.retail.R
 import com.retail.goods.GoodsUtils
-import common.util.ServiceManagerFactory
 import kotlinx.android.synthetic.pad.pad_activity_main.*
+import main.ServiceManagerFactory
 import member.service.IMemberPadService
 import member.service.IMemberVerificationService
 
@@ -16,7 +16,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.pad_activity_main)
-
         val padService = ServiceManagerFactory.getInstance().get(IMemberPadService::class.java)
 
         button.setOnClickListener {

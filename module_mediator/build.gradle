@@ -16,9 +16,9 @@ android {
         main {
             manifest.srcFile 'src/AndroidManifest.xml'
             java.srcDirs = [
-                    'src/goods/common/java', '.apt_generated',
-                    'src/member/common/java', '.apt_generated',
-                    'src/common/java', '.apt_generated'
+                    'src/goods/main/java', '.apt_generated',
+                    'src/member/main/java', '.apt_generated',
+                    'src/main/java', '.apt_generated',
             ]
         }
 

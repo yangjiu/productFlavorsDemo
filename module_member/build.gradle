@@ -1,5 +1,5 @@
 apply from: "../module.gradle"
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    compileOnly project(':mediator')
+    compileOnly project(':module_mediator')
 }

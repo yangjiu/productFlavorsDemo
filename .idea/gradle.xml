@@ -9,9 +9,9 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/goods" />
-            <option value="$PROJECT_DIR$/mediator" />
-            <option value="$PROJECT_DIR$/member" />
+            <option value="$PROJECT_DIR$/module_goods" />
+            <option value="$PROJECT_DIR$/module_mediator" />
+            <option value="$PROJECT_DIR$/module_member" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

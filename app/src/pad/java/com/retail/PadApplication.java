@@ -1,7 +1,7 @@
 package com.retail;
 
 import com.retail.member.service.MemberPadServiceImpl;
-import common.util.ServiceManagerFactory;
+import main.ServiceManagerFactory;
 import member.service.IMemberPadService;
 
 public class PadApplication extends MainApplication {

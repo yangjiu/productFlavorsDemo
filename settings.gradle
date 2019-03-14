@@ -1,1 +1,1 @@
-include ':app', ':mediator', ':goods', ':member'
+include ':app', ':module_mediator', ':module_goods', ':module_member'

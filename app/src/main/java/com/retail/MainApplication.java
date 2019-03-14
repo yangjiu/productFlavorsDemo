@@ -2,7 +2,7 @@ package com.retail;
 
 import android.app.Application;
 import com.retail.member.service.MemberWrapServiceImpl;
-import common.util.ServiceManagerFactory;
+import main.ServiceManagerFactory;
 import member.service.IMemberWrapperService;
 
 public class MainApplication extends Application {

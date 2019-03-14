@@ -1,7 +1,7 @@
 package com.retail;
 
 import com.retail.member.service.MemberPhoneServiceImpl;
-import common.util.ServiceManagerFactory;
+import main.ServiceManagerFactory;
 import member.service.IMemberPhoneService;
 
 public class PhoneApplication extends MainApplication {

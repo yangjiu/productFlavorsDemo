@@ -6,7 +6,7 @@ import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import com.retail.goods.R;
-import common.util.ServiceManagerFactory;
+import main.ServiceManagerFactory;
 import member.service.IMemberPhoneService;
 
 

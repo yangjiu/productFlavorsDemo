@@ -1,1 +1,1 @@
-include ':app', ':service', ':goods', ':member'
+include ':app', ':mediator', ':goods', ':member'

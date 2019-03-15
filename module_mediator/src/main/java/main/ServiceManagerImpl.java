@@ -29,12 +29,6 @@ public final class ServiceManagerImpl implements IServiceManager, IService {
             return null;
         }
         Object obj = ClassUtil.newInstance(_class);
-        // add lifecycle ？
-//        if (obj instanceof LifecycleObserver) {
-//            if (AppUtil.getLastLifecycleOwner() != null) {
-//                AppUtil.getLastLifecycleOwner().getLifecycle().addObserver((LifecycleObserver) obj);
-//            }
-//        }
         mServiceInstanceMap.put(className, obj);
         return (T) obj;
     }

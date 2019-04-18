@@ -20,7 +20,7 @@ public final class ServiceManagerFactory implements IServiceManager {
     }
 
     private ServiceManagerFactory() {
-        mServiceManagerDelegate = ClassUtil.newInstance(ServiceManagerImpl.class);
+        mServiceManagerDelegate = ClassUtil.INSTANCE.newInstance(ServiceManagerImpl.class);
         init();
     }
 

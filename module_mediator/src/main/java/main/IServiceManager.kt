@@ -1,22 +1,17 @@
-package main;
-
-import android.support.annotation.NonNull;
-
-import java.util.List;
+package main
 
 /**
  * 服务管理
  *
  */
-@SuppressWarnings("unused")
-public interface IServiceManager {
+interface IServiceManager {
 
     /**
      * 获取服务的实现类
      */
-    <T> T get(@NonNull Class<T> cls);
+    operator fun <T> get(cls: Class<T>): T?
 
-    <T> List<T> getAll(@NonNull Class<T> cls);
+    fun <T> getAll(cls: Class<T>): List<T>
 
     /**
      * 添加服务的实现类
@@ -24,7 +19,7 @@ public interface IServiceManager {
      * @param cls 接口Class对象
      * @param implClass 实现类Class对象
      */
-    <T, E extends T> IServiceManager put(@NonNull Class<T> cls, @NonNull Class<E> implClass);
+    fun <T, E : T> put(cls: Class<T>, implClass: Class<E>): IServiceManager
 
     /**
      * 替换服务的实现类
@@ -32,24 +27,24 @@ public interface IServiceManager {
      * @param cls 接口Class对象
      * @param implClass 实现类Class对象
      */
-    <T, E extends T> boolean replace(@NonNull Class<T> cls, @NonNull Class<E> implClass);
+    fun <T, E : T> replace(cls: Class<T>, implClass: Class<E>): Boolean
 
     /**
      * 是否包含某个服务的实现类
      *
      * @param cls 接口Class对象
      */
-    <T> boolean contains(@NonNull Class<T> cls);
+    operator fun <T> contains(cls: Class<T>): Boolean
 
     /**
      * 移除服务的实现类
      *
      * @param cls 接口Class对象
      */
-    <T> void remove(@NonNull Class<T> cls);
+    fun <T> remove(cls: Class<T>)
 
     /**
      * 清理资源
      */
-    void clear();
+    fun clear()
 }

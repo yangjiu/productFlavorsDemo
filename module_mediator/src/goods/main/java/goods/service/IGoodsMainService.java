@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * 商品服务
  */
-public interface IGoodsService {
+public interface IGoodsMainService {
     /**
      * 根据商品 id 查询商品
      *

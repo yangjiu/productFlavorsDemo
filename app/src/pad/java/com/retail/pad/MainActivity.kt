@@ -8,7 +8,7 @@ import com.retail.R
 import com.retail.goods.GoodsUtils
 import kotlinx.android.synthetic.pad.pad_activity_main.*
 import main.ServiceManagerFactory
-import member.service.IMemberPadService
+import member.service.IMemberService
 import member.service.IMemberVerificationService
 
 
@@ -16,21 +16,21 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.pad_activity_main)
-        val padService = ServiceManagerFactory.getInstance().get(IMemberPadService::class.java)
+        val padService = ServiceManagerFactory.getInstance().get(IMemberService::class.java)
 
         button.setOnClickListener {
             GoodsUtils.toast(this)
         }
 
         button1.setOnClickListener {
-            val qRCode = padService.prepayQRCode
+            val qRCode = padService?.prepayQRCode
             Toast.makeText(this, qRCode, Toast.LENGTH_SHORT).show()
             Log.e("verification", "二维码：$qRCode")
         }
 
         button2.setOnClickListener {
-            val info = padService.memberService.getMemberInfo("17605889789")
-            Toast.makeText(this, info.name, Toast.LENGTH_SHORT).show()
+            val info = padService?.memberService?.getMemberInfo("17605889789")
+            Toast.makeText(this, info?.name, Toast.LENGTH_SHORT).show()
             Log.e("verification", "二维码：$info")
 
         }
@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
         .IControl? = null
 
         verification.setOnClickListener {
-            control = padService.memberService.memberVerification { isSucceed, info ->
+            control = padService?.memberService?.memberVerification { isSucceed, info ->
                 Log.e("verification", "$isSucceed---${info.toString()}")
             }
         }

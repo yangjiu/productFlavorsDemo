@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import com.retail.goods.R;
 import main.ServiceManagerFactory;
-import member.service.IMemberPhoneService;
+import member.service.IMemberService;
 
 
 public class GoodsActivity extends AppCompatActivity {
@@ -20,7 +20,7 @@ public class GoodsActivity extends AppCompatActivity {
         findViewById(R.id.button1).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                IMemberPhoneService service = ServiceManagerFactory.getInstance().get(IMemberPhoneService.class);
+                IMemberService service = ServiceManagerFactory.getInstance().get(IMemberService.class);
                 Fragment fragment = service.getLoginView();
                 getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout, fragment).commit();
             }

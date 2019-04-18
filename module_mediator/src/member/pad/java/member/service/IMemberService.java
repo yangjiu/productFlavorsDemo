@@ -3,7 +3,7 @@ package member.service;
 /**
  * 会员pad服务
  */
-public interface IMemberPadService extends IMemberWrapperService {
+public interface IMemberService extends IMemberWrapperService {
     /**
      * 获取储值二维码
      *

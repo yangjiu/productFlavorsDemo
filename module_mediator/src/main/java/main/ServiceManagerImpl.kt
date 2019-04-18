@@ -21,8 +21,8 @@ class ServiceManagerImpl : IServiceManager, IService {
         if (mServiceInstanceMap.containsKey(className)) {
             return mServiceInstanceMap[className] as T?
         }
-        val clas = mServiceClassMap[className] ?: return null
-        val obj = ClassUtil.newInstance(clas)
+        val cla = mServiceClassMap[className] ?: return null
+        val obj = ClassUtil.newInstance(cla)
         mServiceInstanceMap[className] = obj!!
         return obj as T
     }

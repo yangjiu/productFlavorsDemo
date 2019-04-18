@@ -9,7 +9,6 @@ import java.util.Map;
 
 /**
  * 服务管理实现类
- *
  */
 @SuppressWarnings("unused")
 public final class ServiceManagerImpl implements IServiceManager, IService {
@@ -50,6 +49,10 @@ public final class ServiceManagerImpl implements IServiceManager, IService {
         if (!cls.isInterface()) {
             throw new IllegalArgumentException("ServiceManager put方法的key必须是接口，而不应该是：" + cls);
         }
+        if (mServiceClassMap.containsKey(cls.getName())) {
+           throw new ClassCastException(cls.getName()+",该类已经存在，请不要重复注册");
+        }
+
         mServiceClassMap.put(cls.getName(), implClass);
         return this;
     }

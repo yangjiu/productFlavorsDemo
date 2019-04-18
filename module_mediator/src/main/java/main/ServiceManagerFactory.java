@@ -7,9 +7,7 @@ import java.util.List;
 
 /**
  * 服务管理工厂类
- *
  */
-
 @SuppressWarnings("unused")
 public final class ServiceManagerFactory implements IServiceManager {
 

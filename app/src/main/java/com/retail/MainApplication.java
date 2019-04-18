@@ -10,5 +10,6 @@ public class MainApplication extends Application {
     public void onCreate() {
         super.onCreate();
         ServiceManagerFactory.getInstance().put(IMemberWrapperService.class,MemberWrapServiceImpl.class);
+        ServiceManagerFactory.getInstance().put(IMemberWrapperService.class,MemberWrapServiceImpl.class);
     }
 }

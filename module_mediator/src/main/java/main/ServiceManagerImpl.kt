@@ -1,5 +1,6 @@
 package main
 
+import java.lang.IllegalStateException
 import java.util.ArrayList
 import java.util.HashMap
 
@@ -42,7 +43,7 @@ class ServiceManagerImpl : IServiceManager, IService {
             throw IllegalArgumentException("ServiceManager put方法的key必须是接口，而不应该是：$cls")
         }
         if (mServiceClassMap.containsKey(cls.name)) {
-            throw ClassCastException(cls.name + ",该类已经存在，请不要重复注册")
+            throw IllegalStateException(cls.name + ",该类已经注册，请不要重复注册")
         }
 
         mServiceClassMap[cls.name] = implClass
